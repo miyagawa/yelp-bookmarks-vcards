@@ -90,5 +90,11 @@ sub export_vcards {
 }
 
 package main;
-Yelp::Exporter->new(yelp_userid => $ARGV[0])->run;
+use Getopt::Long;
+my %options;
+GetOptions(\%options, "output=s");
+
+my $app = Yelp::Exporter->new(yelp_userid => $ARGV[0]);
+$app->output($options{output}) if $options{output};
+$app->run;
 
