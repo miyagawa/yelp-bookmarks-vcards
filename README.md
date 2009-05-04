@@ -6,7 +6,7 @@ Grabs your favorite businesses from Yelp bookmarks and export them as vCard cont
 
 ## Requirements
 
-Perl (5.8.1 or over recommended) and required CPAN modules (Any::Moose, Mouse, JSON, LWP, URI and Text::vCard).
+Perl (5.8.1 or over recommended) and required CPAN modules: Any::Moose, Mouse (or Moose), MouseX::Getopt, JSON, LWP, URI and Text::vCard.
 
 ## How to run it
 
