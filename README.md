@@ -6,11 +6,11 @@ Grabs your favorite businesses from Yelp bookmarks and export them as vCard cont
 
 ## Requirements
 
-Perl (5.8.1 or over recommended) and required CPAN modules: Any::Moose, Mouse (or Moose), MouseX::Getopt, JSON, LWP, URI and Text::vCard.
+Perl (5.8.1 or over recommended) and required CPAN modules: Any::Moose, Mouse (or Moose), JSON, LWP, URI and Text::vCard.
 
 ## How to run it
 
-`./yelp-bookmarks-vcards.pl --yelp_userid=YOUR-YELP-USERID`
+`./yelp-bookmarks-vcards.pl YOUR-YELP-USERID`
 
 You can find your Yelp user id by going to your Yelp bookmarks and see it in the URL `/user_details_bookmarks?userid=XXXXX`. For example my userid is `FikttuWnTGR1l09gokcwtw`.
 

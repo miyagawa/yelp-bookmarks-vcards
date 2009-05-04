@@ -10,8 +10,6 @@ use URI::QueryParam;
 use Text::vCard;
 use Text::vCard::Addressbook;
 
-with any_moose('X::Getopt');
-
 has yelp_userid => (
     is => 'rw', isa => 'Str', required => 1,
 );
@@ -92,5 +90,5 @@ sub export_vcards {
 }
 
 package main;
-Yelp::Exporter->new_with_options->run;
+Yelp::Exporter->new(yelp_userid => $ARGV[0])->run;
 
